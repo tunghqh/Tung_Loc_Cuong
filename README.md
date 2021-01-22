@@ -98,3 +98,71 @@
     * Method: DELETE
     * Endpoint: /customer/:customer_id
 * Response: message
+## Categories
+### Get all Categories
+* Request
+    * Method: GET
+    * Endpoint: /categories/all
+    * Params: None
+    * Body: None
+* Response: [Categories]
+### Add a categories
+* Request
+    * Method: POST
+    * Endpoint: /categories
+    * Body:
+        * category_name: string
+        * description: string
+* Response: Message
+### Update a categories
+* Request:
+    * Method: PUT
+    * Endpoint: /customer/:category_id
+    * Body:
+        * category_name: string
+        * description: string
+* Response: Message
+
+### Delete a categories
+* Request:
+    * Method: DELETE
+    * Endpoint: /customer/:category_id
+* Response: message
+## Employees
+### Get all employees
+* Request
+    * Method: GET
+    * Endpoint: /employees/all
+    * Params: None
+    * Body: None
+* Response: [Employees]
+### Add a employees
+* Request
+    * Method: POST
+    * Endpoint: /employees
+    * Body:
+        * last_name: string
+        * first_name: string
+        * birth_date: date
+        * photo: string
+        * notes: string
+* Response: Message
+### Update a employees
+* Request:
+    * Method: PUT
+    * Endpoint: /customer/:employees_id
+    * Body:
+       * last_name: string
+        * first_name: string
+        * birth_date: date
+        * photo: string
+        * notes: string
+* Response: Message
+
+### Delete a employees
+* Request:
+    * Method: DELETE
+    * Endpoint: /customer/:employees_id
+* Response: message
+
+.....
