@@ -164,5 +164,181 @@
     * Method: DELETE
     * Endpoint: /customer/:employees_id
 * Response: message
+## OrderDetails
+### Get all orderdetails
+* Request
+    * Method: GET
+    * Endpoint: /orderdetails/all
+    * Params: None
+    * Body: None
+* Response: [OrderDetails]
+### Add a orderdetails
+* Request
+    * Method: POST
+    * Endpoint: /orderdetails
+    * Body:
+         * order_id: string
+         * product_id: string
+         * quantity: string
+         * Response: Message
+### Update a orderdetails
+* Request:
+    * Method: PUT
+    * Endpoint: /orderdetails/:orderdetail_id
+    * Body:
+         * order_id: string
+         * product_id: string
+         * quantity: string
+         * Response: Message
+* Response: Message
+
+### Delete a orderdetails
+* Request:
+    * Method: DELETE
+    * Endpoint: /orderdetails/:orderdetail_id
+* Response: message
+## Orders
+### Get all orders
+* Request
+    * Method: GET
+    * Endpoint: /orders/all
+    * Params: None
+    * Body: None
+* Response: [orders]
+### Add a orders
+* Request
+    * Method: POST
+    * Endpoint: /orders
+    * Body:
+         * customer_id: string
+         * employee_id: string
+         * orderdate: date
+         * shipper_id: string
+* Response: Message
+### Update a orders
+* Request:
+    * Method: PUT
+    * Endpoint: /orders/:order_id
+    * Body:
+         * customer_id: string
+         * employee_id: string
+         * orderdate: date
+         * shipper_id: string
+* Response: Message
+### Delete a orders
+* Request:
+    * Method: DELETE
+    * Endpoint: /orders/:order_id
+* Response: message
+
+## Products
+### Get all products
+* Request
+    * Method: GET
+    * Endpoint: /products/all
+    * Params: None
+    * Body: None
+* Response: [Products]
+### Add a products
+* Request
+    * Method: POST
+    * Endpoint: /products
+    * Body:
+         * product_name: string
+         * supplier_id: string
+         * category_id: string
+         * photo: unit
+         * price: string
+
+     * Response: Message
+### Update a products
+* Request:
+    * Method: PUT
+    * Endpoint: /products/:product_id
+    * Body:
+         * product_name: string
+         * supplier_id: string
+         * category_id: string
+         * photo: unit
+         * price: string
+
+* Response: Message
+
+### Delete a products
+* Request:
+    * Method: DELETE
+    * Endpoint: /products/:product_id
+* Response: message
+## Shippers
+### Get all shippers
+* Request
+    * Method: GET
+    * Endpoint: '/shippers/all'
+    * Params: None
+    * Body: None
+* Response: [Shippers]
+### Add a shippers
+* Request
+    * Method: POST
+    * Endpoint: /shippers
+    * Body:
+         * shipper_name: string
+         * phone: string
+
+* Response: Message
+### Update a shippers
+* Request:
+    * Method: PUT
+    * Endpoint: /shippers/:shipper_id
+    * Body:
+         * shipper_name: string
+         * phone: string
+* Response: Message
+
+### Delete a shippers
+* Request:
+    * Method: DELETE
+    * Endpoint: /shippers/:shipper_id
+* Response: message
+## Suppliers
+### Get all suppliers
+* Request
+    * Method: GET
+    * Endpoint: /suppliers/all
+    * Params: None
+    * Body: None
+* Response: [Suppliers]
+### Add a suppliers
+* Request
+    * Method: POST
+    * Endpoint: /suppliers
+    * Body:
+         * supplier_name: string
+         * contact_name: string
+         * address: string
+         * city: string
+         * postal_code: string
+         * country: string
+         * phone: string
+* Response: Message
+### Update a suppliers
+* Request:
+    * Method: PUT
+    * Endpoint: /suppliers/:supplier_id 
+    * Body:
+         * supplier_name: string
+         * contact_name: string
+         * address: string
+         * city: string
+         * postal_code: string
+         * country: string
+         * phone: string
+* Response: Message
+
+### Delete a suppliers
+* Request:
+    * Method: DELETE
+    * Endpoint: /suppliers/:supplier_id 
+* Response: message
 
 .....
