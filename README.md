@@ -8,3 +8,6 @@
 
 
 
+
+
+# Code ở phần backend e tải lên bị gì xem không được. Nhưng khi clone về là được đó ạ
